@@ -14,6 +14,7 @@ void draw() {
   img.resize(600, 600);  
   pg.image(img, 0, 0, img.width, img.height);  
   pg.endDraw(); 
+  image(pg, 0, 0);
   
   for (int i = 0; i < img.width*img.height; i++) {
       color c = img.pixels[i];
@@ -21,10 +22,7 @@ void draw() {
       c = color(weightedAverage,weightedAverage,weightedAverage);
       img.pixels[i] = c;
     }
-  
-  
-  image(pg, 0, 0);
-  
+    
   img.loadPixels();
   String letterOrder =
   " .`-_':,;^=+/\"|)\\<>)iv%xclrs{*}I?!][1taeo7zjLu" +
