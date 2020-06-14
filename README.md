@@ -23,9 +23,8 @@
 - Máscara de convulución con **shaders** [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/ConvolutionsVideoShaders)
 - Conversión a ASCII [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/AsciiVideo )
 # 2. Proyecto de visualización de datos del dataset citibike
-- React app [Repo]()
-- Processing app [Repo]()
-
+- React app [Repo](https://github.com/visual-computing-2020-G1/visualizations), [Pagina web](https://visual-computing-2020-g1.github.io/visualizations/).
+- Processing app [Repo](https://github.com/visual-computing-2020-G1/Visualizacion-con-Processing).
 #  Resultados
 ## Imagen
 ### Conversión a escala de grises
@@ -80,15 +79,18 @@ Es posible observar el histograma de brillo, promedio RGB, Luma(weight), R,G y B
 
 ## Video
 ### Conversión a escala de grises
-- Sin **shaders**
+Se procede a convertir el video <code>toma2.mp4</code> diponible [aquí](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/blob/master/GrayScaleVideo/GrayScaleVideo/data/toma2.mp4) a escala de grises usando el promedio y luma. 
+- Sin **shaders** <br>
 ![](/mdImages/grayScaleVideo.png)
-- con **shaders**
-![](/mdImages/grayScaleVideoShaders.png)
-
+- con **shaders** <br>
+![](/mdImages/grayScaleVideoShaders.png)<br>
+Los resultados con shaders parecen más eficientes, el procesamiento sin ellos parace menos eficaz en cada frame.
 ### Mascaras de convolución
 
-### Acii
+![](/mdImages/videoConv.png)
 
+### Acii
+![](/mdImages/ASCIIVIDEO.png)
 ### Resultados
 
 ![](/mdImages/GroupColumn-20200614.svg)

@@ -19,7 +19,7 @@ float fontSize = 2.5;
 void setup() {
   size(640, 480);
 
-  video = new Capture(this, 320, 240);
+  video = new Capture(this, 640, 480);
   
   video.start();  
   
