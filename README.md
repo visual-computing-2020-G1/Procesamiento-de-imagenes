@@ -42,12 +42,13 @@ Se puede cambiar del modo oprimiendo la tecla 'c'.
 Se puede cambiar de modo aplicando la tecla <code>c</code>.
 - Promedio y luma 
   <br>
-![](/mdImages/imgAVGShader.PNG  =200x400)![](/mdImages/imgLumaShader.PNG =200x400)
+![](/mdImages/imgAVGShader.PNG)![](/mdImages/imgLumaShader.PNG)
 
-## Máscaras de convolución sin y con shaders
+### Máscaras de convolución sin y con shaders
 
 Se aplican dos mascaras de convoluciones distintas llamadas sharpen y edge detectión, estan definidas por las matrices: <br>
-$$
+![](/mdImages/matrix.png)
+<!-- $$
 edgeDetection  = 
 \begin{pmatrix}
 -1 & -1 & -1\\
@@ -60,16 +61,15 @@ sharpen  =
 -2 & 5 & -2\\
 1 & -2 & 1
 \end{pmatrix}
-$$
-![](/mdImages/edgeDetection.png  =200x400)![](/mdImages/sharper.png =200x400)
-
+$$ -->
+![](/mdImages/edgeDetection.png)![](/mdImages/sharper.png)
 ## Conversión a ASCII
 Se convierte la imagen <code>980px-Fire_breathing_2_Luc_Viatour.jpg</code> a ASCII con la siguiente expresión
     <code>  .`-_':,;^=+/\"|)\\<>)iv%xclrs{*}I?!][1taeo7zjLunT#JCwfy325Fp6mqSghVd4EgXPGZbYkOA&8U$@KHDBWNMR0Q</code>
 donse se busca mapear con el brillo de cada pixel. <br>
 ![](/mdImages/imgtoAscii.png)
 
-## Histograma
+### Histograma
 Es posible observar el histograma de brillo, promedio RGB, Luma(weight), R,G y B de 7 imagenes distintas.
 
 - Click para cambiar de imagen.
@@ -77,4 +77,22 @@ Es posible observar el histograma de brillo, promedio RGB, Luma(weight), R,G y B
 -  <code>g </code> y <code> h </code> para cambiar el nivel G.
 -  <code>b </code> y <code> n </code> para cambiar el nivel B. <br>
 ![](/mdImages/histograma.png)
+
+## Video
+### Conversión a escala de grises
+- Sin **shaders**
+![](/mdImages/grayScaleVideo.png)
+- con **shaders**
+![](/mdImages/grayScaleVideoShaders.png)
+
+### Mascaras de convolución
+
+### Acii
+
+### Resultados
+
+![](/mdImages/GroupColumn-20200614.svg)
+
+
+
 
