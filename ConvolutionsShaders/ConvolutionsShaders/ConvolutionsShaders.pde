@@ -1,4 +1,4 @@
-//press 'c' to change between blur and sharpen filter
+//press 'c' to change between edge detection and sharpen filter
 PShader convolution;
 PImage img;
 PShape square,square2;

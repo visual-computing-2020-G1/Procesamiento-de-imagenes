@@ -1,8 +1,9 @@
+import processing.video.*;
 //press 'c' to change the kernel
 
-PImage img;
+Movie movie;
 PGraphics pg;
-boolean flag=false;
+boolean flag=true;
 
 float[][] edgeDetection = {{ -1, -1,  -1 }, 
                           {  -1,  9,  -1 }, 
@@ -11,22 +12,30 @@ float[][] sharpen = {{  1,  -2,   1 },
                      { -2,   5,  -2 },
                      {  1,  -2,   1 }};
 float[][] kernel;
-
+                    
+float frameRateSum,frameRateAverage;
 
 void setup() {
   background(0,0,0);
-  size(1200, 600); 
-  pg = createGraphics(600,600);
+  size(1120, 320); 
+  pg = createGraphics(560, 320);
+  movie = new Movie(this, "toma2.mp4");  
+  movie.loop();
 }
 
 void draw() { 
-  img = loadImage("980px-Fire_breathing_2_Luc_Viatour.jpg"); 
-  img.resize(600, 600); 
+  frameRateSum += frameRate;
+  if (frameCount == 1000){
+    frameRateAverage = frameRateSum / frameCount;
+    println(frameRateAverage);
+    movie.stop();
+    noLoop();
+  }
   pg.beginDraw();
-  pg.image(img, 0, 0, img.width, img.height); 
+  pg.image(movie, 0, 0, 560, 320); 
   pg.endDraw();
-  image(pg,0,0);
-  applyFilter(img);
+  image(pg,0,0);  
+  applyFilter(movie);  
 }
 
 void applyFilter(PImage img){
@@ -59,11 +68,15 @@ void applyFilter(PImage img){
     }
   }
   newImage.updatePixels();  
-  image(newImage, 600, 0);
+  image(newImage, 560, 0);
 }
 
 void keyPressed(){
   if (key == 'c') {
     flag = !flag;    
   }
+}
+
+void movieEvent(Movie movie) {  
+  movie.read(); 
 }
