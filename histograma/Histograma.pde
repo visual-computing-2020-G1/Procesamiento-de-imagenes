@@ -49,7 +49,7 @@ int[] countB ;
 int bins = 20;
 float epsilon = 1;
 
-String[] images = {"laDefense.jpg",  "sunflower.jpg" , "blue.jpg", "mario.png" , "soacha.jpg", "socios.jpg"};
+String[] images = {"laDefense.jpg",  "sunflower.jpg" , "blue.jpg", "mario.png" , "soacha.jpg", "socios.jpg", "980px-Fire_breathing_2_Luc_Viatour.jpg"};
 
 Chart chart0;
 Chart chart1;
@@ -109,7 +109,7 @@ void setup() {
 }
 void initAllPlots(){
     //Chosing an image
-  String image_name = images[currentImage % 6 ];
+  String image_name = images[currentImage % 7 ];
   webImg = loadImage(image_name, "png");
   image(webImg, 0, 0, plotX1 - paddingLeft, plotY2 + paddingBottom);
 
