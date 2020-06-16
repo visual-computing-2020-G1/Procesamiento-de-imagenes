@@ -66,7 +66,7 @@ $$ -->
 Se convierte la imagen <code>980px-Fire_breathing_2_Luc_Viatour.jpg</code> a ASCII con la siguiente expresión
     <code>  .`-_':,;^=+/\"|)\\<>)iv%xclrs{*}I?!][1taeo7zjLunT#JCwfy325Fp6mqSghVd4EgXPGZbYkOA&8U$@KHDBWNMR0Q</code>
 donse se busca mapear con el brillo de cada pixel. <br>
-![](/mdImages/imgtoAscii.png)
+![](/mdImages/imgToAscii.png)
 
 ### Histograma
 Es posible observar el histograma de brillo, promedio RGB, Luma(weight), R,G y B de 7 imagenes distintas.
@@ -81,16 +81,16 @@ Es posible observar el histograma de brillo, promedio RGB, Luma(weight), R,G y B
 ### Conversión a escala de grises
 Se procede a convertir el video <code>toma2.mp4</code> diponible [aquí](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/blob/master/GrayScaleVideo/GrayScaleVideo/data/toma2.mp4) a escala de grises usando el promedio y luma. 
 - Sin **shaders** <br>
-![](/mdImages/grayScaleVideo.png)
+![](/mdImages/grayScaleVideo.PNG)
 - con **shaders** <br>
-![](/mdImages/grayScaleVideoShaders.png)<br>
+![](/mdImages/grayScaleVideoShaders.PNG)<br>
 Los resultados con shaders parecen más eficientes, el procesamiento sin ellos parace menos eficaz en cada frame.
 ### Mascaras de convolución
 
-![](/mdImages/videoConv.png)
+![](/mdImages/videoConv.PNG)
 
 ### Acii
-![](/mdImages/ASCIIVIDEO.png)
+![](/mdImages/ASCIIVIDEO.PNG)
 ### Resultados
 
 ![](/mdImages/GroupColumn-20200614.svg)
