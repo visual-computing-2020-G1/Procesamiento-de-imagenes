@@ -32,8 +32,7 @@ Se usan dos tecnicas para la conversión de la imagen a escala de grises, la pri
 Se puede cambiar del modo oprimiendo la tecla 'c'.
 - Promedio <br>
 ![](/mdImages/imgAVG.PNG)
-- Luma
-<br>
+- Luma <br>
 ![](/mdImages/imgLuma.PNG)
 
 ## Conversión a escala de grises con **shaders**
