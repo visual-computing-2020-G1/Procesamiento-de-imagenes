@@ -10,8 +10,6 @@
 ## 1. Objetivos
 ## 2. Metodología
 ## 3. Procesamiento de imagenes
-## 4. Conclusiones
-
 ### 3.1 Imagen
 - Conversión a escala de grises [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/GrayScale)
 - Conversión a escala de grises con **shaders** [Folder](https://github.com/visual-computing-2020-G1/**Procesamiento**-de-imagenes/tree/master/GrayScaleShaders/GrayScaleShaders)
@@ -28,8 +26,9 @@
 - Máscara de convulución con **shaders** [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/ConvolutionsVideoShaders)
 - Conversión a ASCII [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/VideoToAscii )
 
+# 4. Conclusiones
 
-# 4. Proyecto de visualización de datos del dataset citibike
+# 5. Proyecto de visualización de datos del dataset citibike
 - React app [Repo](https://github.com/visual-computing-2020-G1/visualizations), [Pagina web](https://visual-computing-2020-g1.github.io/visualizations/).
 - Processing app [Repo](https://github.com/visual-computing-2020-G1/Visualizacion-con-Processing).
 
