@@ -1,14 +1,18 @@
 # Computación visual 2020-1
-<!-- 
+
 | Integrante  | Correo   |
 |---|---|
 | Johnathan Leon Andres Leon Rodriguez | jaleonro@unal.edu.co   |
-|Nicolás Parra Ramos| niparrrara@unal.edu.co | -->
+|Nicolás Parra Ramos| niparrrara@unal.edu.co |
+|Daniel Felipe Leyva| dfleyvad@unal.edu.co |
 
 # Contenido
 ## 1. Objetivos
-## 2.  Procesamiento de imagenes
-### 2.1 Imagen
+## 2. Metodología
+## 3. Procesamiento de imagenes
+## 4. Conclusiones
+
+### 3.1 Imagen
 - Conversión a escala de grises [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/GrayScale)
 - Conversión a escala de grises con **shaders** [Folder](https://github.com/visual-computing-2020-G1/**Procesamiento**-de-imagenes/tree/master/GrayScaleShaders/GrayScaleShaders)
 - Máscaras de convolución [Folder](https://github.com/-visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/Convolutions/Convolutions)
@@ -16,14 +20,16 @@
 - Conversión a ASCII [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/ImgToASCII)
 - Histograma [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/histograma)
 
-### 2.2 Video
+### 3.2 Video
 
 - Escala de grises [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/GrayScaleVideo/GrayScaleVideo)
 - Escala de grises con **shaders** [Folder](https:/****/github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/GrayScaleVideoShaders)
 - Máscara de convolución [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/ConvolutionsVideo)
 - Máscara de convulución con **shaders** [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/ConvolutionsVideoShaders)
 - Conversión a ASCII [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/VideoToAscii )
-# 3. Proyecto de visualización de datos del dataset citibike
+
+
+# 4. Proyecto de visualización de datos del dataset citibike
 - React app [Repo](https://github.com/visual-computing-2020-G1/visualizations), [Pagina web](https://visual-computing-2020-g1.github.io/visualizations/).
 - Processing app [Repo](https://github.com/visual-computing-2020-G1/Visualizacion-con-Processing).
 
@@ -33,13 +39,17 @@
 - Comparar la eficiencia computacional del metodo por hardware y el metodo por software
 - Explorar posibles ideas para un proyecto relacionado con la materia
 
-
-#  2. Resultados
-## 2.1 Imagen
+# 2. Metodología
+Metodología:
+- Para la medición de la eficiencia computacional se eligio como medida el promedio del Frame rate, el cual fue obtenido almacenando el valor del Frame rate en cada iteración  del metodo draw para 1000 iteraciones y luego dividiendo la suma total por el valor del Frame count.
+- Se ejecuto cada programa sin tener ningun otro abierto
+  
+#  3. Resultados
+## 3.1 Imagen
 
 
 ### Conversión a escala de grises
-Se usan dos tecnicas para la conversión de la imagen a escala de grises, la primera es con el promedio RGB y la segunda es luma $0.2126R + 0.7152G + 0722B$.<br>
+Se usan dos tecnicas para la conversión de la imagen a escala de grises, la primera es con el promedio RGB y la segunda es luma 0.2126R + 0.7152G + 0722B.<br>
 Se puede cambiar del modo oprimiendo la tecla 'c'.
 - Promedio <br>
 ![](/mdImages/imgAVG.PNG)
@@ -87,7 +97,7 @@ Es posible observar el histograma de brillo, promedio RGB, Luma(weight), R,G y B
 -  <code>b </code> y <code> n </code> para cambiar el nivel B. <br>
 ![](/mdImages/histograma.png)
 
-##  2.2 Video
+##  3.2 Video
 ### Conversión a escala de grises
 Se procede a convertir el video <code>toma2.mp4</code> diponible [aquí](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/blob/master/GrayScaleVideo/GrayScaleVideo/data/toma2.mp4) a escala de grises usando el promedio y luma. 
 - Sin **shaders** <br>
@@ -105,5 +115,7 @@ Los resultados con shaders parecen más eficientes, el procesamiento sin ellos p
 ![](/mdImages/GroupColumn-20200616.svg)
 
 
-
+## Conclusiones
+- La conversión de video a escala de grises es más efectiva con **shaders** comparado con el metodo convencional, puesto  que el segundo no cumple  con eficacia la tarea en tiempo real sin embargo el meotodo convecional  tiene un framerate ligeramente superior.
+  
 
