@@ -6,6 +6,7 @@
 |Nicolás Parra Ramos| niparrrara@unal.edu.co | -->
 
 # Contenido
+
 ## 1. Procesamiento de imagenes
 ### 1.1 Imagen
 - Conversión a escala de grises [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/GrayScale)
@@ -18,7 +19,7 @@
 ### 1.2 Video
 
 - Escala de grises [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/GrayScaleVideo/GrayScaleVideo)
-- Escala de grises con **shaders** [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/GrayScaleVideoShaders)
+- Escala de grises con **shaders** [Folder](https:/****/github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/GrayScaleVideoShaders)
 - Máscara de convolución [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/ConvolutionsVideo)
 - Máscara de convulución con **shaders** [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/ConvolutionsVideoShaders)
 - Conversión a ASCII [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/AsciiVideo )
@@ -27,6 +28,8 @@
 - Processing app [Repo](https://github.com/visual-computing-2020-G1/Visualizacion-con-Processing).
 #  Resultados
 ## Imagen
+
+
 ### Conversión a escala de grises
 Se usan dos tecnicas para la conversión de la imagen a escala de grises, la primera es con el promedio RGB y la segunda es luma $0.2126R + 0.7152G + 0722B$.<br>
 Se puede cambiar del modo oprimiendo la tecla 'c'.
@@ -88,11 +91,10 @@ Los resultados con shaders parecen más eficientes, el procesamiento sin ellos p
 
 ![](/mdImages/videoConv.PNG)
 
-### Acii
+### ASCII
 ![](/mdImages/ASCIIVIDEO.PNG)
-### Resultados
 
-![](/mdImages/GroupColumn-20200614.svg)
+![](/mdImages/GroupColumn-20200616.svg)
 
 
 
