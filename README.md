@@ -6,9 +6,9 @@
 |Nicolás Parra Ramos| niparrrara@unal.edu.co | -->
 
 # Contenido
-
-## 1. Procesamiento de imagenes
-### 1.1 Imagen
+## 1. Objetivos
+## 2.  Procesamiento de imagenes
+### 2.1 Imagen
 - Conversión a escala de grises [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/GrayScale)
 - Conversión a escala de grises con **shaders** [Folder](https://github.com/visual-computing-2020-G1/**Procesamiento**-de-imagenes/tree/master/GrayScaleShaders/GrayScaleShaders)
 - Máscaras de convolución [Folder](https://github.com/-visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/Convolutions/Convolutions)
@@ -16,18 +16,26 @@
 - Conversión a ASCII [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/ImgToASCII)
 - Histograma [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/histograma)
 
-### 1.2 Video
+### 2.2 Video
 
 - Escala de grises [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/GrayScaleVideo/GrayScaleVideo)
 - Escala de grises con **shaders** [Folder](https:/****/github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/GrayScaleVideoShaders)
 - Máscara de convolución [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/ConvolutionsVideo)
 - Máscara de convulución con **shaders** [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/ConvolutionsVideoShaders)
-- Conversión a ASCII [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/AsciiVideo )
-# 2. Proyecto de visualización de datos del dataset citibike
+- Conversión a ASCII [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/VideoToAscii )
+# 3. Proyecto de visualización de datos del dataset citibike
 - React app [Repo](https://github.com/visual-computing-2020-G1/visualizations), [Pagina web](https://visual-computing-2020-g1.github.io/visualizations/).
 - Processing app [Repo](https://github.com/visual-computing-2020-G1/Visualizacion-con-Processing).
-#  Resultados
-## Imagen
+
+
+#  1. Objetivos
+- Conocer las generalidades del procesamiento de imagenes en processing tanto por hardware como por software a traves de ejercicios practicos.
+- Comparar la eficiencia computacional del metodo por hardware y el metodo por software
+- Explorar posibles ideas para un proyecto relacionado con la materia
+
+
+#  2. Resultados
+## 2.1 Imagen
 
 
 ### Conversión a escala de grises
@@ -79,7 +87,7 @@ Es posible observar el histograma de brillo, promedio RGB, Luma(weight), R,G y B
 -  <code>b </code> y <code> n </code> para cambiar el nivel B. <br>
 ![](/mdImages/histograma.png)
 
-## Video
+##  2.2 Video
 ### Conversión a escala de grises
 Se procede a convertir el video <code>toma2.mp4</code> diponible [aquí](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/blob/master/GrayScaleVideo/GrayScaleVideo/data/toma2.mp4) a escala de grises usando el promedio y luma. 
 - Sin **shaders** <br>
