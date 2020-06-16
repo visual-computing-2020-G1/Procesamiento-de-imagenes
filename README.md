@@ -9,7 +9,7 @@
 ## 1. Procesamiento de imagenes
 ### 1.1 Imagen
 - Conversión a escala de grises [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/GrayScale)
-- Conversión a escala de grises con **shaders** [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/GrayScaleShaders/GrayScaleShaders)
+- Conversión a escala de grises con **shaders** [Folder](https://github.com/visual-computing-2020-G1/**Procesamiento**-de-imagenes/tree/master/GrayScaleShaders/GrayScaleShaders)
 - Máscaras de convolución [Folder](https://github.com/-visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/Convolutions/Convolutions)
 - Máscaras de convolución con **shaders** [Folder](https://github.com/-visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/ConvolutionsShaders/ConvolutionsShaders)
 - Conversión a ASCII [Folder](https://github.com/visual-computing-2020-G1/Procesamiento-de-imagenes/tree/master/ImgToASCII)
@@ -46,7 +46,7 @@ Se puede cambiar de modo aplicando la tecla <code>c</code>.
 ### Máscaras de convolución sin y con shaders
 
 Se aplican dos mascaras de convoluciones distintas llamadas sharpen y edge detectión, estan definidas por las matrices: <br>
-![](/mdImages/matrix.png)
+![](/mdImages/matrix.PNG)
 <!-- $$
 edgeDetection  = 
 \begin{pmatrix}
