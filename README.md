@@ -104,6 +104,9 @@ Se procede a convertir el video <code>toma2.mp4</code> diponible [aquí](https:/
 - con **shaders** <br>
 ![](/mdImages/grayScaleVideoShaders.PNG)<br>
 Los resultados con shaders parecen más eficientes, el procesamiento sin ellos parace menos eficaz en cada frame.
+- La conversión de video a escala de grises es más efectiva con **shaders** comparado con el metodo convencional, puesto  que el segundo no cumple  con eficacia la tarea en tiempo real sin embargo el meotodo convecional  tiene un framerate ligeramente superior.
+  
+
 ### Mascaras de convolución
 
 ![](/mdImages/videoConv.PNG)
@@ -111,10 +114,29 @@ Los resultados con shaders parecen más eficientes, el procesamiento sin ellos p
 ### ASCII
 ![](/mdImages/ASCIIVIDEO.PNG)
 
+  
+| Especificación| |
+|---|---|
+| Grafica| Intel HD Graphics 510   |
+| Memoria (VRAM)| 128MB |
+| Memoria compartida| 4040MB |
+| Memoria | 81292 |
+| CPU| Intel Pentium(R) 4405U @2.10GHz (4 CPUS)|
+  
 ![](/mdImages/GroupColumn-20200616.svg)
 
+### Limite de software
+![](/mdImages/FrameLimit.jpeg)
 
 ## Conclusiones
-- La conversión de video a escala de grises es más efectiva con **shaders** comparado con el metodo convencional, puesto  que el segundo no cumple  con eficacia la tarea en tiempo real sin embargo el meotodo convecional  tiene un framerate ligeramente superior.
-  
-
+- Aunque los shaders pueden simplificar la programación de operaciones como la convolución y la conversion a escala de grises, también dificultan
+la implementación de otras como la conversión a ASCII, porque no permiten consultar información de otro hilo y no hay registro de los resultados de 
+operaciones anteriores. 
+- El poder computacional que ofrece el paralelismo y la optimización de operaciones de los shaders se encuentra restringido a la capacidad del hardware, 
+sino se cuenta con una capacidad de computo suficiente se desperdicia su poder. Por más que se optimice no se puede lograr gran diferenci con implementaciones por software si ya se ha alcanzado el limite de la maquina.
+- La poca diferencia entre las versiones de software y hardware de los ejercicios se puede explicar por el limite de la capacidad de computo 
+de la GPU para las operaciones realizadas, es decir, para los dos casos se esta sobre el limite superior del frame rate y no se puede ir más alla.
+Tambien, como en el caso de la escala de grises pueden haber operaciones que resulten más eficientes en su implementación por software.
+- Los shaders son una herramienta muy poderosa para la computación visual porque permiten controlar las operaciones a un nivel muy bajo, posibilitando 
+implementar funciones de gran complejidad al dividirlas y paralelizarlas en partes más pequeñas y menos complejas.
+- Los shaders mejoran notablemente el rendimiento del procesamiento de imagenes y video en tiempo real.
