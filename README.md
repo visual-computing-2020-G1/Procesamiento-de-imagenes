@@ -125,7 +125,7 @@ Los resultados con shaders parecen más eficientes, el procesamiento sin ellos p
   
 ![](/mdImages/GroupColumn-20200616.svg)
 
-### Limite de software
+### Medición del limite de hardware
 ![](/mdImages/FrameLimit.jpeg)
 
 ## Conclusiones
